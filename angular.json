@@ -29,7 +29,11 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/LawnmowerRepository.js",
+              "src/assets/js/PhoneCaseRepository.js",
+              "src/assets/js/TShirtRepository.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -86,7 +90,11 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/LawnmowerRepository.js",
+              "src/assets/js/PhoneCaseRepository.js",
+              "src/assets/js/TShirtRepository.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"

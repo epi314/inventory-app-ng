@@ -5,6 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 
+import { PRODUCT_SERVICE, RepositoryService} from '@app/core';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +16,9 @@ import { SharedModule } from './shared/shared.module';
     SharedModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    { provide: PRODUCT_SERVICE, useValue: new RepositoryService() },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
