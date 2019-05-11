@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from './material.module';
+import { ProductListingComponent } from './components/product-listing/product-listing.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [ProductListingComponent],
   imports: [
     CommonModule,
     MaterialModule,
@@ -14,7 +15,9 @@ import { MaterialModule } from './material.module';
   exports: [
     CommonModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+
+    ProductListingComponent
   ]
 })
 export class SharedModule { }
